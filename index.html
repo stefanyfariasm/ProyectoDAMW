@@ -35,12 +35,56 @@
 </main>
 
  <!-- Sección2 datos personales-->
+<section class="datosPersonales">
+ <div class="tabla">
+    <table>
+        <tr>
+            <td colspan="2">Datos Personales</td>
+        </tr>
+        <tr>
+            <td>Nombre</td>
+            <td>Stefany</td>
+        </tr>
+        <tr>
+            <td>Edad</td>
+            <td>22</td>
+  
+        </tr>
+        <tr>
+            <td>Nacionalidad</td>
+            <td>Ecuatoriana</td>
+        </tr>
+    </table>
+    </div>
+</section>
 
+<section class="estudios">
+    <div class="tabla">
+       <table>
+           <tr>
+               <td colspan="2">Estudios</td>
+           </tr>
+           <tr>
+               <td>Escuela</td>
+               <td>gabriel Pino Roca</td>
+           </tr>
+           <tr>
+               <td>Colegio</td>
+               <td>Tecnológico Guayaquil</td>
+     
+           </tr>
+           <tr>
+               <td>Idiomas</td>
+               <td>Español e Inglés</td>
+           </tr>
+       </table>
+       </div>
+   </section>
 
      <!-- INICIO Sección3 lenguajes de programación-->
     <section class="secLenguajes" id="lenguajes">  
     <h2> Lenguajes de programación aprendidos</h2>
-        <div class="tablaLeguajes">
+        <div class="tabla">
         <table>
             <tr>
                 <td><em>Lenguaje / Nivel</em></td>
@@ -93,10 +137,36 @@
         </div>
     </section>
 
+    <section class="mapa">
+        <h1>Esta es la ubicación de mi local, no dudes en visitarme</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.9922689235905!2d-79.8937218715998!3d-2.1566354416938522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6da3be52b6ef%3A0x170c664ba45e75d3!2sExecutive%20Center%2C%20Av.%20Joaqu%C3%ADn%20Orrantia%20y%20Av.%20Juan%20Tanca%20Marengo%2C%20Guayaquil%20090513!5e0!3m2!1ses!2sec!4v1654793986944!5m2!1ses!2sec" 
+        width="400" height="450" loading="lazy" ></iframe>
+    </section>
+
     <!-- FIN Sección5 emprendimiento-->
 
 
     <!-- Sección6 comentarios-->
+    <section class="formulario">
+    <div class="fomulario">
+        <h2>Envíame un comentario</h2>
+        <form action="#" target="" method="get" name="formDatosPersonales">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre *"/>
+        
+            <label for="apellidos">Apellido</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tu Apellido* "/>       
+           
+            <label for="asunto">Asunto</label>
+            <input type ="text" name="asunto" id="asunto" placeholder="Asunto"/>
+        
+            <label for="mensaje">Comentario</label>
+            <textarea name="mensaje" for="mensaje" placeholder="Escribe tu comentario" maxlength="300"></textarea>
+            
+            <input type="submit" name="enviar" value="enviar datos"/>
+        </form>
+        
+    </section>
     
 
 </body>

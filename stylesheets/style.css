@@ -33,12 +33,20 @@ h1{
     justify-content: center;
 
 }
-
-
-.tablaLenguajes {
+.tabla{
     text-align: center;  
     justify-content: center;
+    height: 100%;
+    width: 100%;     
     
+}
+
+
+table{
+    border-collapse:separate;
+    border: #fc92d9 0.2rem solid;
+    margin: auto;
+    padding: auto;
     
 }
 
