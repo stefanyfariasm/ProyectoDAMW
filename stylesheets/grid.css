@@ -1,0 +1,73 @@
+* , *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+body{
+    display: grid;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    "fila11 fila12 fila12"
+    "fila21 fila22 fila23"
+    "fila31 fila31 fila31"
+    "fila41 fila42 fila42"
+    "fila51 fila52 fila52"
+    "fila61 fila62 fila62";
+    justify-content: center;
+}
+
+#sobreMi{ 
+    grid-area: fila11;
+}
+
+.video{
+    grid-area: fila12;
+    width: auto;
+    height: auto;
+}
+
+#datosPersonales{
+    grid-area: fila21;
+}
+
+#estudios{
+    grid-area: fila22;
+}
+
+#foto{
+    grid-area: fila23;
+}
+
+#lenguajes{
+    grid-area: fila31;
+}
+
+#metas{
+    grid-area: fila41;
+}
+
+#imagenesmeta{
+    grid-area: fila42;
+}
+
+#emprendimiento{
+    grid-area: fila51;
+    justify-content: center;
+}
+
+#mapa{
+    grid-area: fila52;
+    justify-content: center;
+}
+
+#formulario{
+    grid-area: fila61;
+    justify-content: center;
+}
+
+#redes{
+    grid-area: fila62;
+}
+

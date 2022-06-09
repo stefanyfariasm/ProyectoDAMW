@@ -1,19 +1,13 @@
-
-
 body{
     background-image:url("https://img.freepik.com/vector-gratis/fondo-pintura-acuarela-rosa-vibrante_53876-58930.jpg?w=2000");
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
 }
-#sobreMi{
-    background-image:-moz-linear-gradient(#90bfe9, #ffffff, #fc92d9, #f2d6ff, #8fa6b3);
-
-  }
 
  h3{
     margin: 0 6rem;
     color: rgb(15, 1, 3);
 }
+
 h2{
     font-family:cursive;
     color: rgb(218, 55, 177);
@@ -33,12 +27,12 @@ h1{
     justify-content: center;
 
 }
+
 .tabla{
     text-align: center;  
     justify-content: center;
     height: 100%;
-    width: 100%;     
-    
+    width: 100%;      
 }
 
 
@@ -47,13 +41,15 @@ table{
     border: #fc92d9 0.2rem solid;
     margin: auto;
     padding: auto;
-    
+    height: 80%;
+    width: 100%;
+    object-fit:contain;    
 }
 
 section {
     background:#fffbfe;
-    border-radius: 2rem;
-    margin: 3rem;
-    padding: 3rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 1rem;
     box-shadow: 0.1rem 0.3rem rgb(252, 150, 218);
 }

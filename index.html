@@ -5,37 +5,37 @@
   <meta charset="utf-8">
   <title>Proyecto DAWM</title>
   <link rel='stylesheet' href='stylesheets/style.css' />
+  <link rel='stylesheet' href='stylesheets/grid.css' />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-             <li>Inicio</li>
-             <li>Datos personales</li>
-             <li>Lenguajes de programación</li>
-             <li>Metas</li>
-             <li>Emprendimiento</li>
-             <li>Comentarios</li>
-            </ul>
-        </nav>
-    </header>
+
 
     <main>
 
  <!-- INICIO Sección1 bienvenida -->
   <section id="sobreMi" class="bienvenida">
-
+<div>
     <h2>Bienvenido </h2>
     <h3>mi nombre es </h3>
     <h1>Stefany Farías Mera </h1>
+</div>
   </section>
+
+ 
+        <div class="video">
+            <section id="v">
+        <p> Este video</p>
+        <video src="video/organización.mp4" width="100" height="200" poster="img/organización.jpg" controls autoplay muted loop></video>
+    </section>
+    </div>
+   
 
   <!-- FIN Sección1 bienvenida -->
 
 </main>
 
  <!-- Sección2 datos personales-->
-<section class="datosPersonales">
+<section id="datosPersonales">
  <div class="tabla">
     <table>
         <tr>
@@ -56,9 +56,11 @@
         </tr>
     </table>
     </div>
+
+    
 </section>
 
-<section class="estudios">
+<section id="estudios">
     <div class="tabla">
        <table>
            <tr>
@@ -79,6 +81,10 @@
            </tr>
        </table>
        </div>
+   </section>
+
+   <section id="foto">
+    <img src="img/emprendimiento.PNG"  width="300rem">
    </section>
 
      <!-- INICIO Sección3 lenguajes de programación-->
@@ -113,8 +119,8 @@
 
     <!-- Sección4 metas-->
 
-    <section class="emprendimiento">
-        <div class="imaEmprendimiento">
+    <section id="metas">
+        <div class="metas">
             <h2>Metas alcanzadas este año </h2>
             <ol>
             <li>Terminar curso CSS</li>
@@ -125,20 +131,23 @@
         </div>
     </section>
 
+    <section id="imagenesmeta">
+
+    </section>
 
 
     <!-- INICIO Sección5 emprendimiento-->
-    <section class="emprendimiento">
+    <section id="emprendimiento">
         <div class="imaEmprendimiento">
-            <h1>Este es mi pequeño emprendimiento</h1>
+            <h2>Este es mi pequeño emprendimiento</h2>
             <img src="img/emprendimiento.PNG"  width="300rem">
             <p>Es mi meta más grande, visítanos <a href="https://www.instagram.com/creationsbystefy/?hl=es" target="_blank"> aquí</a></p>
             
         </div>
     </section>
 
-    <section class="mapa">
-        <h1>Esta es la ubicación de mi local, no dudes en visitarme</h1>
+    <section id="mapa">
+        <h2>Esta es la ubicación de mi local, no dudes en visitarme</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.9922689235905!2d-79.8937218715998!3d-2.1566354416938522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6da3be52b6ef%3A0x170c664ba45e75d3!2sExecutive%20Center%2C%20Av.%20Joaqu%C3%ADn%20Orrantia%20y%20Av.%20Juan%20Tanca%20Marengo%2C%20Guayaquil%20090513!5e0!3m2!1ses!2sec!4v1654793986944!5m2!1ses!2sec" 
         width="400" height="450" loading="lazy" ></iframe>
     </section>
@@ -147,7 +156,7 @@
 
 
     <!-- Sección6 comentarios-->
-    <section class="formulario">
+    <section id="formulario">
     <div class="fomulario">
         <h2>Envíame un comentario</h2>
         <form action="#" target="" method="get" name="formDatosPersonales">
@@ -168,6 +177,9 @@
         
     </section>
     
+    <section id="redes">
+        <img src="img/emprendimiento.PNG"  width="300rem">
+    </section>
 
 </body>
 
