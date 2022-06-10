@@ -1,6 +1,8 @@
 body{
     background-image:url("https://img.freepik.com/vector-gratis/fondo-pintura-acuarela-rosa-vibrante_53876-58930.jpg?w=2000");
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    align-items: center;
 }
 
  h3{
@@ -41,9 +43,15 @@ table{
     border: #fc92d9 0.2rem solid;
     margin: auto;
     padding: auto;
-    height: 80%;
+    height: 100%;
     width: 100%;
     object-fit:contain;    
+}
+
+#redes{
+    padding: 2rem;
+    margin: 1rem;
+    align-content: center;
 }
 
 section {
@@ -52,4 +60,8 @@ section {
     margin: 0.5rem;
     padding: 1rem;
     box-shadow: 0.1rem 0.3rem rgb(252, 150, 218);
+}
+
+li{
+    font-size: x-large;
 }

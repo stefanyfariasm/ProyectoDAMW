@@ -4,6 +4,7 @@
     box-sizing: border-box;
     }
 
+
 body{
     display: grid;
     row-gap: 0.5rem;
@@ -15,7 +16,7 @@ body{
     "fila41 fila42 fila42"
     "fila51 fila52 fila52"
     "fila61 fila62 fila62";
-    justify-content: center;
+
 }
 
 #sobreMi{ 
@@ -71,3 +72,9 @@ body{
     grid-area: fila62;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+    body{
+        display: grid;
+        grid-template-columns: fila21 fila22 fila23;
+    }
+}
