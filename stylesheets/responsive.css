@@ -10,7 +10,8 @@ body{
     row-gap: 0.5rem;
     column-gap: 0.5rem;
     grid-template-areas: 
-    "fila11 fila12 fila12"
+    "fila01 fila02 fila03"
+    
     "fila21 fila22 fila23"
     "fila31 fila31 fila31"
     "fila41 fila42 fila42"
@@ -19,15 +20,23 @@ body{
 
 }
 
-#sobreMi{ 
-    grid-area: fila11;
+.bienvenida{ 
+    grid-area: fila01;
 }
 
-.video{
-    grid-area: fila12;
+#estudiante{
+  
+    width: 100%;
+    grid-area: fila02;
     width: auto;
     height: auto;
 }
+
+.video{
+    grid-area: fila03;
+    width: auto;
+    height: auto;}
+
 
 #datosPersonales{
     grid-area: fila21;
@@ -76,5 +85,28 @@ body{
     body{
         display: grid;
         grid-template-columns: fila21 fila22 fila23;
+    }
+
+    section{
+        background:rgb(154, 252, 252);
+    }
+    body :nth-child(1){
+        display: none;
+    }
+
+ 
+      
+      #sobreMi{
+        display:grid;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: fila01; 
+      }
+
+      form{
+        background-color: rgb(227, 27, 253);
+        display: flex; flex-direction: column;
     }
 }

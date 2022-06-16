@@ -30,6 +30,13 @@ h1{
 
 }
 
+#estudiante{
+    text-align: center;  
+    justify-content: center;
+    height: 100%;
+    width: 100%;      
+}
+
 .tabla{
     text-align: center;  
     justify-content: center;
