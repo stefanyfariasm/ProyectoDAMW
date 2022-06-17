@@ -1,0 +1,111 @@
+* , *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+
+body{
+    display: grid;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    "fila01 fila02 fila03"  
+    "fila21 fila22 fila23"
+    "fila31 fila31 fila31"
+    "fila41 fila42 fila42"
+    "fila51 fila52 fila52"
+    "fila61 fila62 fila62";
+
+}
+
+.bienvenida{ 
+    grid-area: fila01;
+}
+
+#estudiante{
+  
+    width: 100%;
+    grid-area: fila02;
+    width: auto;
+    height: auto;
+}
+
+.video{
+    grid-area: fila03;
+    width: auto;
+    height: auto;}
+
+
+#datosPersonales{
+    grid-area: fila21;
+}
+
+#estudios{
+    grid-area: fila22;
+}
+
+#foto{
+    grid-area: fila23;
+}
+
+#lenguajes{
+    grid-area: fila31;
+}
+
+#metas{
+    grid-area: fila41;
+}
+
+#imagenesmeta{
+    grid-area: fila42;
+}
+
+#emprendimiento{
+    grid-area: fila51;
+    justify-content: center;
+}
+
+#mapa{
+    grid-area: fila52;
+    justify-content: center;
+}
+
+#formulario{
+    grid-area: fila61;
+    justify-content: center;
+}
+
+#redes{
+    grid-area: fila62;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+    body{
+        display: grid;
+        grid-template-columns: "fila21 fila22 fila23";
+    }
+
+    section{
+        background:rgb(154, 252, 252);
+    }
+    body :nth-child(1){
+        display: none;
+    }
+
+ 
+      
+      #sobreMi{
+        display:grid;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: fila01; 
+      }
+
+      form{
+        background-color: rgb(227, 27, 253);
+        display: flex; flex-direction: column;
+    }
+}

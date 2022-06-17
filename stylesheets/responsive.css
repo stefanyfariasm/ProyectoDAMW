@@ -1,112 +1,106 @@
-* , *:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    }
-
-
 body{
     display: grid;
     row-gap: 0.5rem;
     column-gap: 0.5rem;
     grid-template-areas: 
-    "fila01 fila02 fila03"
-    
-    "fila21 fila22 fila23"
-    "fila31 fila31 fila31"
-    "fila41 fila42 fila42"
-    "fila51 fila52 fila52"
-    "fila61 fila62 fila62";
-
+    "fila01"
+    "fila02"
+    "fila03"
+    "fila04";
 }
 
-.bienvenida{ 
+#bienvenida{
+    display: flex;
     grid-area: fila01;
+    justify-content: space-between;
+    width: auto;
+
 }
 
-#estudiante{
-  
-    width: 100%;
-    grid-area: fila02;
-    width: auto;
-    height: auto;
+#bienvenida .sobreMi{
+    width: 40%;
 }
-
-.video{
-    grid-area: fila03;
-    width: auto;
-    height: auto;}
-
 
 #datosPersonales{
-    grid-area: fila21;
+    display: flex;
+    grid-area: fila02;
+    justify-content: space-between;
+    width: auto;
 }
 
-#estudios{
-    grid-area: fila22;
-}
-
-#foto{
-    grid-area: fila23;
+#datosPersonales .datos{
+    width: 40%;
 }
 
 #lenguajes{
-    grid-area: fila31;
+    display: flex;
+    grid-area: fila03;
+    justify-content: space-between;
+    width: auto;
 }
 
 #metas{
-    grid-area: fila41;
+    display: flex;
+    grid-area: fila04;
+    justify-content: space-between;
+    width: auto;
 }
 
-#imagenesmeta{
-    grid-area: fila42;
-}
 
-#emprendimiento{
-    grid-area: fila51;
-    justify-content: center;
-}
 
-#mapa{
-    grid-area: fila52;
-    justify-content: center;
-}
 
-#formulario{
-    grid-area: fila61;
-    justify-content: center;
-}
-
-#redes{
-    grid-area: fila62;
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+@media only screen and (min-width:100px) and (max-width:768px){
     body{
         display: grid;
-        grid-template-columns: fila21 fila22 fila23;
+        grid-template-columns: 1fr;
+        background-color: darksalmon;
     }
 
-    section{
-        background:rgb(154, 252, 252);
-    }
-    body :nth-child(1){
-        display: none;
+    #bienvenida {
+        display: grid;
+        grid-template-columns: 1fr;    
+        justify-content: space-between;
+        background-color: aquamarine;
     }
 
- 
-      
-      #sobreMi{
-        display:grid;
-        width: 100%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        grid-template-columns: fila01; 
-      }
 
-      form{
-        background-color: rgb(227, 27, 253);
-        display: flex; flex-direction: column;
+    #bienvenida .sobreMi{
+        width: 10%;
+    }
+
+    #datosPersonales{
+        display: grid;
+        grid-template-columns: 1fr;    
+        justify-content: space-between;
+        background-color: rgb(214, 127, 255);
+    }
+
+    #lenguajes{
+        display: grid;
+        grid-template-columns: 1fr;    
+        justify-content: space-between;
+        background-color: rgb(207, 236, 127);
+    }
+    
+
+    #meta{
+        display: grid;
+        grid-template-columns: 1fr;    
+        justify-content: space-between;
+        background-color: rgb(255, 200, 127);
+    }
+
+    #emprendimiento{
+        display: grid;
+        grid-template-columns: 1fr;    
+        justify-content: space-between;
+        background-color: rgb(241, 42, 152);
+    }
+
+    #formulario{
+        display: grid;
+        grid-template-columns: 1fr;    
+        justify-content: space-between;
+        background-color: rgb(91, 107, 245);
     }
 }
