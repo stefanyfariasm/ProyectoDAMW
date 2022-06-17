@@ -6,7 +6,11 @@ body{
     "fila01"
     "fila02"
     "fila03"
-    "fila04";
+    "fila04"
+    "fila05"
+    "fila06"
+    "final"
+   ;
 }
 
 #bienvenida{
@@ -29,14 +33,17 @@ body{
 }
 
 #datosPersonales .datos{
-    width: 40%;
+    width: 30%;
 }
 
 #lenguajes{
-    display: flex;
+   display: inline;
     grid-area: fila03;
-    justify-content: space-between;
-    width: auto;
+
+}
+
+#lenguajes .tabla{
+    width: 100%;
 }
 
 #metas{
@@ -46,10 +53,37 @@ body{
     width: auto;
 }
 
+#metas .metas{
+    width: 100%;
+}
+
+#emprendimiento{
+    display: flex;
+    grid-area: fila05;
+    justify-content: space-between;
+    width: auto;
+}
+#emprendimiento .emprem{
+    width: 100%;
+}
+
+#contactos{
+    display: flex;
+    grid-area: fila06;
+    justify-content: space-between;
+    width: auto;
+}
+#contactos .contac{
+    width: 40%;
+}
+
+footer{
+    grid-area: final;
+    justify-content: center;
+}
 
 
-
-@media only screen and (min-width:100px) and (max-width:768px){
+@media only screen and (min-width:200px) and (max-width:800px){
     body{
         display: grid;
         grid-template-columns: 1fr;
@@ -98,9 +132,12 @@ body{
     }
 
     #formulario{
-        display: grid;
-        grid-template-columns: 1fr;    
+        display: flex;
+        grid-template-columns: 1fr;  
+        flex-direction: column;  
         justify-content: space-between;
         background-color: rgb(91, 107, 245);
     }
+
+
 }

@@ -72,3 +72,10 @@ section {
 li{
     font-size: x-large;
 }
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(252, 162, 229);
+    color: white;
+  }
