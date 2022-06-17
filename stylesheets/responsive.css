@@ -48,6 +48,7 @@ body{
 
 #metas{
     display: flex;
+    flex-direction:row;
     grid-area: fila04;
     justify-content: space-between;
     width: auto;
@@ -59,12 +60,13 @@ body{
 
 #emprendimiento{
     display: flex;
+    
     grid-area: fila05;
     justify-content: space-between;
     width: auto;
 }
 #emprendimiento .emprem{
-    width: 100%;
+    width: 50%;
 }
 
 #contactos{
@@ -74,7 +76,7 @@ body{
     width: auto;
 }
 #contactos .contac{
-    width: 40%;
+    width: 60%;
 }
 
 footer{
@@ -97,7 +99,6 @@ footer{
         background-color: aquamarine;
     }
 
-
     #bienvenida .sobreMi{
         width: 10%;
     }
@@ -118,8 +119,8 @@ footer{
     
 
     #meta{
-        display: grid;
-        grid-template-columns: 1fr;    
+        display: flex;
+        flex-direction:column;
         justify-content: space-between;
         background-color: rgb(255, 200, 127);
     }
@@ -131,13 +132,11 @@ footer{
         background-color: rgb(241, 42, 152);
     }
 
-    #formulario{
-        display: flex;
+    #contactos{
+        display:grid;
         grid-template-columns: 1fr;  
         flex-direction: column;  
         justify-content: space-between;
         background-color: rgb(91, 107, 245);
     }
-
-
 }
