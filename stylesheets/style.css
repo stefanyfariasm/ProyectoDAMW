@@ -22,6 +22,7 @@ h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(119, 51, 11);
     font-size:xx-large;
+    text-align: center;
 }
 
 #lenguajes{
@@ -30,7 +31,9 @@ h1{
 
 }
 
-#estudiante{
+#sobreMi{
+    padding: 2rem;
+    margin: 1rem;
     text-align: center;  
     justify-content: center;
     height: 100%;
