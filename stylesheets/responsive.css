@@ -18,11 +18,12 @@ body{
     grid-area: fila01;
     justify-content: space-between;
     width: auto;
+    
 
 }
 
 #bienvenida .sobreMi{
-    width: 40%;
+    width: 50%;
 }
 
 #datosPersonales{
@@ -55,7 +56,7 @@ body{
 }
 
 #metas .metas{
-    width: 100%;
+    width: 40%;
 }
 
 #emprendimiento{
@@ -85,7 +86,7 @@ footer{
 }
 
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 880px) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 780px) {
     body{
         display: grid;
         grid-template-columns: 1fr;
@@ -97,6 +98,7 @@ footer{
         grid-template-columns: 1fr;    
         justify-content: space-between;
         background-color: aquamarine;
+        width: 100%;
     }
 
     #bienvenida .sobreMi{
