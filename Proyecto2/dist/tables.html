@@ -75,24 +75,32 @@
                             <li class="breadcrumb-item active">Tables</li>
                         </ol>
 
+                        <div class = "seleccion">
+                            <select name="select" >
+                                <option selected>Seleccionar marcas</option>
+                              </select>
+                        </div>  
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                DataTable Example
+                                Datos de Peces
                             </div>
+                            
                             <div class="card-body">
-                                <table id="datatablesSimple">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
-                                        </tr>
-                                    </thead>
-                                   
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Id</th>
+                                            <th scope="col">Marca</th>
+                                            <th scope="col">Marca genérica</th>
+                                            <th scope="col">Número de dispositivos</th>
+                 
+                                          </tr>
+                                        </thead>
+                                        <tbody id="tablaMarcas">
+
+                                    </tbody>
                                 </table>
                             </div>
                         </div>
@@ -101,12 +109,8 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2021</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
+                            <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                        
                         </div>
                     </div>
                 </footer>
