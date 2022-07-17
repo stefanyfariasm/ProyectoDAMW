@@ -8,7 +8,7 @@
         <meta name="author" content="" />
         <title>Charts</title>
         <link href="css/styles.css" rel="stylesheet" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+       
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -83,14 +83,21 @@
                             <div class="card-body"><canvas id="myAreaChart" width="100%" height="30"></canvas></div>
                             <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                         </div>
+                        <div class = "selector">
+                            <select name="select" >
+                                <option selected>Seleccionar celular</option>
+                              </select>
+                        </div> 
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="card mb-4">
+
+                                    
                                     <div class="card-header">
                                         <i class="fas fa-chart-bar me-1"></i>
-                                       
+                                        Imagen de celular
                                     </div>
-                                    <div class="card-body"><canvas id="myBarChart" width="100%" height="50"></canvas></div>
+                                    <div class="card-body"><canvas id="myImage" width="100%" height="50"></canvas></div>
                                     <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                                 </div>
                             </div>
@@ -124,5 +131,8 @@
         <script src="assets/demo/chart-area-demo.js"></script>
         <script src="assets/demo/chart-bar-demo.js"></script>
         <script src="assets/demo/chart-pie-demo.js"></script>
+
+        //librería de chars
+        <script src="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css" ></script>
     </body>
 </html>

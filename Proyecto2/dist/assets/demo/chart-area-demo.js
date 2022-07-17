@@ -3,6 +3,7 @@ Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSyste
 Chart.defaults.global.defaultFontColor = '#292b2c';
 
 
+//grafico de barras
 let marcas = [];
 let cantidades = [];
 
@@ -73,3 +74,8 @@ fetch("https://api-mobilespecs.azharimm.site/v2/brands")
 
 
 
+//cargar imágenes del celular seleccionado
+
+
+
+//Pequeña tabla con información del celular

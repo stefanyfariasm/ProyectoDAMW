@@ -1,5 +1,8 @@
 window.addEventListener('DOMContentLoaded', event => {
     
+
+    //Cargar datos para la tabla
+    
     function cargarDatos(elem){
         let id = elem['brand_id'];
         let marca = elem['brand_name'];
