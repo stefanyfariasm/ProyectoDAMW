@@ -52,17 +52,17 @@ fetch("https://api-mobilespecs.azharimm.site/v2/brands/apple-phones-48")
             }
             else if(elem['phone_name'] == select.value){
                 let marca = elem['brand'];
-    let mombreCelular = elem['phone_name'];
-    let sobrenombre = elem['slug'];
-         
-    let plantilla = `<tr>
+                let mombreCelular = elem['phone_name'];
+                let sobrenombre = elem['slug'];
+                    
+                let plantilla = `<tr>
      
-        <td>${marca}</td>
-        <td>${mombreCelular}</td>
-        <td>${sobrenombre}</td>        
-        </tr>`;
-        tablaCelulares.innerHTML += plantilla;
-                        }
+                <td>${marca}</td>
+                <td>${mombreCelular}</td>
+                <td>${sobrenombre}</td>        
+                </tr>`;
+                tablaCelulares.innerHTML += plantilla;
+            }
         }
     })
     
