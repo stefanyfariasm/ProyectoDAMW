@@ -235,11 +235,11 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #b10dfd;
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: #ea94f5;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -272,7 +272,7 @@ pre code {
 
 code {
   font-size: 0.875em;
-  color: #d63384;
+  color: #f120cf;
   word-wrap: break-word;
 }
 a > code {
@@ -282,8 +282,8 @@ a > code {
 kbd {
   padding: 0.2rem 0.4rem;
   font-size: 0.875em;
-  color: #fff;
-  background-color: #212529;
+  color: rgb(169, 248, 238);
+  background-color: #ddec02;
   border-radius: 0.2rem;
 }
 kbd kbd {
@@ -309,7 +309,7 @@ table {
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: #6c757d;
+  color: #61ebcd;
   text-align: left;
 }
 
@@ -592,7 +592,7 @@ progress {
   margin-top: -1rem;
   margin-bottom: 1rem;
   font-size: 0.875em;
-  color: #6c757d;
+  color: #efb8fa;
 }
 .blockquote-footer::before {
   content: "— ";
@@ -623,7 +623,7 @@ progress {
 
 .figure-caption {
   font-size: 0.875em;
-  color: #6c757d;
+  color: #ccf1b3;
 }
 
 .container,
@@ -1959,7 +1959,7 @@ progress {
 .table, .dataTable-table {
   --bs-table-bg: transparent;
   --bs-table-accent-bg: transparent;
-  --bs-table-striped-color: #212529;
+  --bs-table-striped-color: #fc2f0a;
   --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
   --bs-table-active-color: #212529;
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
@@ -1967,9 +1967,9 @@ progress {
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
   width: 100%;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #0aaeb9;
   vertical-align: top;
-  border-color: #dee2e6;
+  border-color: #a1f5f8;
 }
 .table > :not(caption) > * > *, .dataTable-table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
@@ -2032,7 +2032,7 @@ progress {
   --bs-table-active-color: #000;
   --bs-table-hover-bg: #bfd1ec;
   --bs-table-hover-color: #000;
-  color: #000;
+  color: rgb(255, 0, 0);
   border-color: #bacbe6;
 }
 
@@ -2182,7 +2182,7 @@ progress {
 .form-text {
   margin-top: 0.25rem;
   font-size: 0.875em;
-  color: #6c757d;
+  color: #d400ff;
 }
 
 .form-control, .dataTable-input {
@@ -2193,7 +2193,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
@@ -2280,10 +2280,10 @@ progress {
   }
 }
 .form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, .dataTable-input:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
-  background-color: #dde0e3;
+  background-color: #e0dde3;
 }
 .form-control:hover:not(:disabled):not([readonly])::file-selector-button, .dataTable-input:hover:not(:disabled):not([readonly])::file-selector-button {
-  background-color: #dde0e3;
+  background-color: #17f79a;
 }
 .form-control::-webkit-file-upload-button, .dataTable-input::-webkit-file-upload-button {
   padding: 0.375rem 0.75rem;
@@ -11702,11 +11702,11 @@ body {
 
 
 
-#custom-effect tbody td {
+.myAreaChart tbody td {
   margin-inline-start: 10px;
   margin-inline-end: 20px;
 }
-#custom-effect tbody td:before {
+.myAreaChart tbody td:before {
   content: '';
   position: absolute;
   top: -10px;
@@ -11717,7 +11717,7 @@ body {
   transform-origin: top;
   background-color: lightgrey;
 }
-#custom-effect tbody td:after {
+.myAreaChart tbody td:after {
   content: '';
   position: absolute;
   top: -4px;

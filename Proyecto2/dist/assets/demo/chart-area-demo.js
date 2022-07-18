@@ -20,8 +20,8 @@ fetch("https://api-mobilespecs.azharimm.site/v2/brands")
                 cantidades.push(cantidad);               
             }            
        
-          var ctx = document.getElementById("myAreaChart");
-          var areaChart = new Chart(ctx, {
+          var grafica = document.getElementById("myAreaChart");
+          new Chart(grafica, {
           type: 'bar',
           data: {
             labels: marcas,
