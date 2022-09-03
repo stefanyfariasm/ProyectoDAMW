@@ -16,10 +16,8 @@ module.exports = {
      for (let i = 1; i <5; i++) {  
       await queryInterface.bulkInsert('Ingredientes', [{  
           nombre: arrIngredientes[i-1],  
-          id: i, 
-          cantidad: arrCantidad[i-1],
-          createdAt: new Date(),  
-          updatedAt: new Date()  
+          idIngrediente: i, 
+          cantidad: arrCantidad[i-1],          
       }], {});  
    } 
   },

@@ -11,7 +11,6 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
- 
      let arreglo=[{"nombre":"GelatoMix","descripcion":"helado de mix de frutas","preparacion":"cortar las frutas y batir con crema de leche","imagen":"https://dulcesdiabeticos.com/wp-content/uploads/2017/06/helados-de-frutas-saludables-sin-azucar_opt-1.jpg","pais":"Ecuador","idIngrediente":1},
      {"nombre":"Polo","descripcion":"helado de vainilla con cobertura de chocolate","preparacion":"batir con crema de leche con la vainilla y al final cubrir con una capa de chocolate","imagen":"https://us.123rf.com/450wm/lucielang/lucielang1107/lucielang110700024/9949240-cubiertas-de-chocolate-con-helado-de-bocado-falta-m%C3%A1s-de-blanco.jpg?ver=6","pais":"Ecuador","idIngrediente":2},
      {"nombre":"Cono Cream","descripcion":"helado de cono de mantecado","preparacion":"batir con crema de leche con la vainilla","imagen":"https://us.123rf.com/450wm/jalcaraz/jalcaraz1606/jalcaraz160600002/59920481-aislado-de-vainilla-cono-de-helado.jpg?ver=6","pais":"Puerto Rico","idIngrediente":3},
@@ -24,17 +23,15 @@ module.exports = {
    
     for (var i = arreglo.length - 1; i >= 0; i--) {
       let receta = arreglo[i]
-      await queryInterface.bulkInsert('Recetas', [{  
-           id: i,     
+      await queryInterface.bulkInsert('Receta', [{  
+           idReceta: i,     
            nombre: receta['nombre'],  
             descripcion: receta['descripcion'], 
             preparacion: receta['preparacion'], 
             pais:receta['pais'],
+            fechacreacion: new Date(), 
             idIngrediente: receta['idIngrediente'],
             imagen: receta['imagen'],
-            fechacreacion: new Date(), 
-            createdAt: new Date(),  
-            updatedAt: new Date()  
         }], {});  
     }
   },
@@ -47,7 +44,7 @@ module.exports = {
      * await queryInterface.bulkDelete('People', null, {});
      */
 
-     await queryInterface.bulkDelete('Recetas', null, {});  
+     await queryInterface.bulkDelete('Receta', null, {});  
 
   }
 };

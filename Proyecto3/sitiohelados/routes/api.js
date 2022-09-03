@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const Sequelize = require('sequelize');
-const Receta = require('../models').recetas;  
+const Receta = require('../models').receta;  
 const Ingrediente = require('../models').ingredientes;  
 
 
@@ -25,7 +25,7 @@ router.get('/ingrediente', function(req, res, next) {
   .catch(error => res.status(400).send(error)) 
   });
 
-  router.get('/ingredientes/:id', function(req, res, next) {
+  router.get('/ingrediente/:id', function(req, res, next) {
     Ingrediente.findOne({  
       where: { id: req.params.id }
   })  
@@ -39,17 +39,17 @@ router.get('/recetas/:id', function(req, res, next){
   Receta.findOne({
     where: { id: req.params.id }
   })
-  .then(recetas => {
-    res.json(recetas);
+  .then(receta => {
+    res.json(receta);
   })
   .catch(error => res.status(400).send(error))
 })
-router.get('/recetas/ingredientes/:idIngrediente', function(req, res, next){
+router.get('/recetas/ingrediente/:ingrediente', function(req, res, next){
   Receta.findAll({
-    where: { ingredientes: req.params.idIngrediente }
+    where: { ingrediente: req.params.ingrediente }
   })
-  .then(recetas => {
-    res.json(recetas);
+  .then(receta => {
+    res.json(receta);
   })
   .catch(error => res.status(400).send(error))
 })
