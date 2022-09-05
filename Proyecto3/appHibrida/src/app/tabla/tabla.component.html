@@ -1,0 +1,118 @@
+
+<section>
+  <mat-toolbar class="header">
+    <button mat-icon-button class="example-icon arrow_back_ios-icon" routerLink="/principal">
+      <mat-icon>arrow_back_ios</mat-icon>
+    </button>
+
+
+  </mat-toolbar>
+</section>
+
+<mat-form-field >
+  <mat-label>Nombre del Helado</mat-label>
+  <mat-select (selectionChange)="recetaFiltro($event.value)">
+    <mat-option value="0">ID.Receta</mat-option>
+    <mat-option *ngFor="let receta of nombreRecetas" value="{{receta.idReceta}}" >{{receta.idReceta}}.{{receta.nombre}}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+
+<div class="table-responsive">
+  <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col" class="table-warning"> Id receta</th>
+      <th scope="col" class="table-info">Nombre</th>
+      <th scope="col" class="table-danger">Ciudad</th>
+      <th scope="col" class="table-success">Descripción</th>
+      <th scope="col" class="table-secondary">Preparacion</th>
+   
+
+    </tr>
+  </thead>
+  <tbody >
+    
+    <tr *ngFor="let info of data |keyvalue |slice:desde:hasta " >
+   
+      <td>{{info.value.idReceta}}</td>
+      <td>{{info.value.nombre}}</td>
+      <td>{{info.value.pais}}</td>
+      <td>{{info.value.descripcion}}</td>
+      <td>{{info.value.preparacion}}</td>
+    
+
+     
+    </tr>
+
+  </tbody>
+</table>
+</div>
+
+<mat-paginator [length]="cantidadDatos" [pageSize]="pageSize" aria-label="Select page" (page)="cambiarPagina($event)" >
+</mat-paginator>
+
+
+
+<!--
+<section class="container-fluid full">
+	<div class="row half justify-content-center">
+		<div class="p-0 pt-2 col-2">
+			<button mat-icon-button color="basic" aria-label="back" routerLink="/album">  
+       			<mat-icon>arrow_back</mat-icon> 
+    		</button>  
+		</div>
+		<div class="offset-8 p-0 pt-2 col-2">
+    		<button mat-icon-button color="basic" aria-label="back">  
+       			<mat-icon>menu</mat-icon> 
+    		</button>  
+		</div>
+		
+
+		<div class="col-12">
+			<div class="bd-example">
+                <table class="table table-hover">
+                  <thead>
+                  <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Imagen</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                 
+                    <tr class="table-warning">
+                        <th scope="row">Helado de paleta</th>
+                        <td>helado muy rico, fácil de hacer</td>
+                        <td><img src="assets/imagenes/helado2.PNG" class="img-fluid" alt="imagen" height="100" width="100" ></td>
+                      </tr>
+                      <tr class="table-info">
+                        <th scope="row">Helado de mantecado</th>
+                        <td>helado muy rico, fácil de hacer</td>
+                        <td><img src="assets/imagenes/helado1.PNG" class="img-fluid" alt="imagen" height="100" width="100" ></td>
+                      </tr>
+                      <tr class="table-danger">
+                        <th scope="row">Helado artesanal</th>
+                        <td>helado muy rico, fácil de hacer</td>
+                        <td><img src="assets/imagenes/helado5.PNG" class="img-fluid" alt="imagen" height="100" width="100" ></td>
+                      </tr>
+                  <tr class="table-success">
+                    <th scope="row">Helados especiales</th>
+                    <td>helado muy rico, fácil de hacer</td>
+                    <td><img src="assets/imagenes/helado3.PNG" class="img-fluid" alt="imagen" height="100" width="100" ></td>
+                  </tr>
+             
+              
+             
+                  
+                  </tbody>
+                </table>
+                </div>
+			
+		</div>
+	</div>
+
+
+	
+</section>
+-->

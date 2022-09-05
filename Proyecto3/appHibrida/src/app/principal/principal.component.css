@@ -1,0 +1,27 @@
+
+button{
+	background-color:rgb(198, 99, 248);
+}
+
+
+mat-card-title{
+	color: rgb(255, 0, 157);
+}
+
+mat-card-subtitle{
+	color:black
+}
+
+mat-toolbar, mat-select{
+background-color: rgb(245, 214, 229);
+}
+
+tr{
+	text-align: center;
+}
+
+mat-form-field{
+	padding: 30px;
+	border:30px;
+}
+

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons')
+
+* {
+	font-size: 0.8rem;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.half {
+	min-height: 50vh !important;
+}
+
+#picture {
+	background-size: cover;
+	min-height: 25vh;
+	width: 25vh;
+}
+
+.photo {
+	background-size: cover;
+} 	
+
+.card {
+	background-color: #f7f4f4;
+}

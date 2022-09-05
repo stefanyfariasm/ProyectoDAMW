@@ -1,0 +1,41 @@
+    <p>
+	<mat-toolbar class="header">
+    
+      <span>Recetas de Helados</span>
+
+      <button mat-icon-button [matMenuTriggerFor]="menu" id="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/tabla">
+          <mat-icon>table</mat-icon>
+          <span>Tabla de reporte</span>
+        </button>
+        <button mat-menu-item  routerLink="/metodoapi">
+          <mat-icon>list</mat-icon>
+          <span>Métodos API</span>
+        </button>
+      </mat-menu>
+    </mat-toolbar>
+  </p>
+
+<section class="helados">
+<mat-grid-list cols="2" [gutterSize]="'80px'" [rowHeight]="'300px'">
+  <mat-grid-tile   *ngFor="let receta of dataSource">
+    <mat-card  class="example-card">
+     
+      <img mat-card-md-image src="{{receta.imagen}}" width="200" height="200">
+     
+      <mat-card-title-group>
+      
+        <mat-card-title>{{receta.nombre}}</mat-card-title>
+        <mat-card-subtitle><b>{{receta.pais}}</b></mat-card-subtitle>
+        
+		<mat-card-subtitle><b>{{receta.fechacreacion}}</b></mat-card-subtitle>
+    <mat-card-subtitle><button type="button" class="btn btn-success mx-2" routerLink="/descripcion"> Ver más sobre este helado    </button></mat-card-subtitle>
+      </mat-card-title-group>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+
+</section>

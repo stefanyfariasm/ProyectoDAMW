@@ -1,0 +1,50 @@
+{
+	"model": {
+		"type": "Object",
+		"value": {
+			"idReceta": {
+				"type": "randomNumberBetween",
+				"value": [1, 8]
+			},
+            "nombre": {
+                "type": "faker",
+                "value": "name.lastName"
+            },
+            "descripcion": {
+                "type": "randomElementInArray",
+                "value": ["helado de vainilla con chispas", "paleta de fresa", "helado especial de yogurt", "helado sabor a fresa", "helado de mantecado"]
+            },
+           
+            "preparacion": {
+                "type": "randomElementInArray",
+                "value": ["licuar fresas picadas con crema", "batir crema con leche y vainilla", "licuar fresaas congeladas con agua y endulsate ", "batir crema a punto de nieve, servir y decorar", "batir cualquier fruta congelada con crema de batir"]
+
+            },
+
+            "pais": {
+                "type": "faker",
+                "value": "address.city"
+              },
+           
+			"fechacreacion": {
+				"type": "faker",
+				"value": "date.between",
+				"options": ["1986-01-02", "2000-12-29"]
+			},
+
+            "idIngrediente": {
+				"type": "incrementNumber",
+				"options": {
+					"from": 0
+				}
+			},
+
+			"foto": {
+                "type": "randomElementInArray",
+                "value": ["https://149509661.v2.pressablecdn.com/wp-content/uploads/2020/04/paletasdeyogurtconcocoFT-1.jpg", "https://i.pinimg.com/originals/0c/93/19/0c93194b8a6fdacf24f71c0756c00e00.jpg", "https://thumbs.dreamstime.com/b/tres-bolas-del-helado-con-la-cereza-31592300.jpg", "https://www.hogarmania.com/archivos/201507/helado-de-almendras-hogarmania-668x400x80xX.jpg", "https://media.istockphoto.com/photos/strawberry-sundae-with-whipped-cream-and-a-spoon-picture-id914784162?k=20&m=914784162&s=170667a&w=0&h=gtk_0dym4QINfJq3WvcJqZrFw4U2ql5I6KngsaKnM5A=","https://dulcesdiabeticos.com/wp-content/uploads/2017/06/helados-de-frutas-saludables-sin-azucar_opt-1.jpg","https://us.123rf.com/450wm/lucielang/lucielang1107/lucielang110700024/9949240-cubiertas-de-chocolate-con-helado-de-bocado-falta-m%C3%A1s-de-blanco.jpg?ver=6"]
+
+            }
+
+		}
+	}
+}
