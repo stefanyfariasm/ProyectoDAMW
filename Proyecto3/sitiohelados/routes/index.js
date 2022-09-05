@@ -43,3 +43,34 @@ router.get('/ingredientes', function(req, res, next) {
 
 
 });
+
+router.get('/ingrediente/:id', function(req, res, next) {
+  Ingrediente.findOne({  
+    where: { id: req.params.id }
+})  
+.then(recetas => {  
+    res.json(recetas);  
+})  
+.catch(error => res.status(400).send(error)) 
+});
+
+router.get('/recetas/:id', function(req, res, next){
+Receta.findOne({
+  where: { id: req.params.id }
+})
+.then(receta => {
+  res.json(receta);
+})
+.catch(error => res.status(400).send(error))
+})
+
+
+router.get('/recetas/ingrediente/:ingrediente', function(req, res, next){
+Receta.findAll({
+  where: { ingrediente: req.params.ingrediente }
+})
+.then(receta => {
+  res.json(receta);
+})
+.catch(error => res.status(400).send(error))
+})
