@@ -1,0 +1,35 @@
+<section>
+    <mat-toolbar class="header">
+      <button mat-icon-button class="example-icon arrow_back_ios-icon" routerLink="/principal">
+        <mat-icon>arrow_back_ios</mat-icon>
+      </button>
+  
+  
+    </mat-toolbar>
+  </section>
+  <hr>
+  <div class="col-12">
+    <div class="bd-example">
+        <table class="table table-hover" >
+          <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripción</th>
+          </tr>
+          </thead>
+          <tbody>
+         
+            <tr class="table-warning" *ngFor="let metodo of metodos">
+                <th scope="row">{{metodo.id}}</th>
+                <td>{{metodo.nombre}}</td>
+                <td>{{metodo.descripcion}}</td>
+              </tr>
+         
+     
+      
+     
+          
+          </tbody>
+        </table>
+        </div>

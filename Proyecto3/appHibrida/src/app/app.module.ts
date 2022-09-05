@@ -30,7 +30,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import { DescripcionComponent } from './descripcion/descripcion.component';
 import { TablaComponent } from './tabla/tabla.component';
 import { HttpClientModule } from '@angular/common/http';
-import { MetodoapiComponent } from './metodoapi/metodoapi.component'; 
+
+import { GraficoComponent } from './grafico/grafico.component'; 
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { MetodoapiComponent } from './metodoapi/metodoapi.component';
     AlbumComponent,
     DescripcionComponent,
     TablaComponent,
-    MetodoapiComponent
+    GraficoComponent
   ],
   imports: [
     BrowserModule,
